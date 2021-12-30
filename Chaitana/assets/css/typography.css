@@ -1,0 +1,107 @@
+h1 {
+    /* The following code sets the font color and the shadowing effect, using rgba for opacity */
+    color: rgba(255, 255, 255, 0.8);
+    /* The following code creates the heading shadow  */
+    text-shadow: 2px 2px rgba(1, 1, 1, 0.8);
+    /* The following code makes the text flow from top to bottom */
+    writing-mode: vertical-rl;
+    /* The following code makes the text set veritically */
+    text-orientation: upright;
+    /* The following code makes the whole title uppercase */
+    text-transform: uppercase;
+    /* The following code set the font-size, and font family(there is a link for the  google font in the main.css stylesheet) */
+    font-size: 4em;
+    font-family: 'Abril Fatface', cursive;
+    /* The following code makes the title bold */
+    font-weight: 900;
+}
+
+
+/* The following code makes the nav bar and footer display flex, and the justify-content is set to space around, 
+this formats it so that it has equal space around  and is evenly distributed*/
+.navigation,
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation a,
+.bringback,
+.clickit {
+    /* The following code removes the underline on the links */
+    text-decoration: none;
+    /* The  followingcode is for the text of the link, it sets the font color, size and boldness */
+    color: #f8f4f4;
+    font-size: 2em;
+    font-weight: 700;
+
+
+}
+
+
+
+/* The following psuedo classadds a hover effect to the links, in terms of a text color change */
+.navigation a:hover,
+a:hover {
+    color: turquoise;
+
+}
+
+/* This psuedo class adds a background to the links when they are active, i.e you have  clicked on them */
+.navigation a:active,
+a:active {
+
+    background-color: rgb(93, 176, 209);
+}
+
+/* The following code capitalises the several items of text, and applies a font(the font link can be found in main.css as a Google font) */
+p,
+.navigation a,
+button,
+label,
+h2,
+ul,
+::placeholder,
+.bringback,
+input,
+a {
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* The following code sets the label font size */
+label {
+    font-size: 1.5em;
+}
+
+/* The following code sets the font size for the heading of there form on the contact page */
+h2 {
+    font-size: 2em;
+}
+
+/* The following is a psuedo element for the inputs, it sets font color, font size, makes the placeholde capitalised,
+ using text-transform, and aligns the text in the centre of the input(using text align) */
+::placeholder {
+    color: grey;
+    font-size: 1em;
+    text-transform: capitalize;
+    text-align: center;
+}
+/* The following code is for the list that is generated through Javascript. 
+It sets the font size and color, as well as a margin, so that the bullet points do not overlap elements next to it, as the list is 
+generated. */
+ul {
+    font-size: 1.5em;
+    color: white;
+    margin-left: 40px;
+}
+
+/*This psuedo element, makes the first line  italic for styling purposes*/
+p::first-line {
+    font-style: italic;
+}
+
+/* The following coding sets the font size for the paragraphs */
+p {
+    font-size: 1.5rem;
+}

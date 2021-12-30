@@ -1,0 +1,109 @@
+/* 
+The following codes is for the embedded Google map and the Youtube video */
+iframe {
+    /* The following code sets the iframes' width and heigh at a responsive 100% */
+    width: 100%;
+    height: 100%;
+}
+
+/* The following code gives a white shadow for the iframes and images, and the border-radius provides rounded edges */
+.gallery img,
+iframe {
+    border-radius: 30px;
+    box-shadow: 6px 6px 6px white;
+}
+
+/* 
+The following psuedo element,  it puts the favicon genreated on favicon.io, before the paragraph */
+p::before {
+    content: url('../images/myicon.png')
+}
+
+/* The following pseudo element, changes text to this color and background when text is highlighted */
+::selection {
+    color: turquoise;
+    background-color: black;
+}
+
+/* 
+The following psuedo class, moves the radio input the right when checked */
+:checked {
+    margin-left: 50px;
+
+}
+
+/* The following code is for the styling of the buttons on the form on the contact page */
+button {
+    /* The following code sets the background color and the font color */
+    background-color: black;
+    color: white;
+    /* The following code sets the height of the button */
+    height: 30px;
+    /* The following code indicates the transition property for the hover below */
+    transition-property: color, background-color;
+}
+
+/* 
+The following peusdo class will mean the background color will turn white,
+ and the font color will turn black when you hover over the button */
+button:hover {
+    color: black;
+    background-color: white
+}
+
+/* The following code sets the background color for the navbar and the footer */
+footer,
+.navbar {
+
+    background-color: rgb(114, 114, 199, 0.5);
+}
+
+/* 
+The following code allows for the items to be on top of each other, flowing down */
+label {
+    display: block;
+}
+
+
+/* The following code is for the styling of the inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    /* The following code sets the width to be 100% for  responsiveness, and the height at 40px. */
+    width: 100%;
+    height: 40px;
+    /* The following code makes the text  entered in the input capitalized */
+    text-transform: capitalize;
+    /* The following code makes the input box have rounded edges */
+    border-radius: 20px;
+    /* The following code allows the items to sit on top of each other, in a block format, flowing downwards */
+    display: block;
+    /* The following code adds padding on the top and bottom, so that the entered text is more visible and to prevent it from going too close to the edge of the box */
+    padding: 10px 0 0 10px;
+}
+
+/* The following code is to put the radio input next to the label */
+input[type="radio"] {
+
+    display: inline;
+}
+
+/* This is a  psuedo class, the following code sets the background color for all user editable fields */
+:read-write {
+    background-color: #E0DFD5;
+}
+
+/* The following code is for the comment box on the form */
+textarea {
+    /* The following code sets a responsive width of 100% with a height of 300px */
+    width: 100%;
+    height: 300px;
+  /*  The following code capitalizes the text entered in the box */
+    text-transform: capitalize;
+    /* The following code adds padding on the top and bottom, so that the entered text is more visible,
+     to prevent it from going too close to the edge of the box */
+    padding: 10px 0 0 10px;
+    /* The following code adds rounded corners */
+    border-radius: 20px;
+}

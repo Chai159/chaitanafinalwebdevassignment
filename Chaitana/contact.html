@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The following meta code , with the content set as index,allows for the site to be found in search engines -->
+
+    <meta name="robots" content="index">
+    <!-- The following meta tag links to key words in the search engine -->
+
+    <meta name="keywords" content="Word, Text, Keyword">
+    <!-- The following code meta tags links a description to the search engine -->
+
+    <meta name="description" content="Put what you want">
+    <!-- The following code represents the title in the browser tab -->
+
+    <title>Contact</title>
+    <!-- The following code shows linkes for the main style sheet, the favicon(generated on favicon.io) -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="icon" href="./assets/images/myicon.png">
+    <!-- The following code adds the Javascript file for the list in the form on the Contact Page. It is set to defer,
+    meaning it will start loading, and continue to load at the same time as html, once everything is loaded, it will run -->
+    <script src="./assets/js/main.js" defer></script>
+
+
+
+
+</head>
+
+<!-- The following class on the body is for the styling of the background, in layout.css -->
+
+<body class="photobr">
+    <!-- The following container div class is for the purpose of generating the grid in the layout.css sheet -->
+
+    <div class="container-2">
+        <!-- The following class is for the styling of ther navbar -->
+
+
+        <header class="navbar" id="top">
+            <!-- The following class for the nav is for the purpose of styling the links below, the links are for the navigation around the page -->
+
+            <nav class="navigation">
+                <a href="./index.html"><i class="fas fa-home"></i>homepage</a>
+                <a href="./about.html"><i class="fas fa-user-friends"></i>about</a>
+                <a href="./contact.html"><i class="fas fa-at"></i>contact</a>
+            </nav>
+        </header>
+
+        <!-- The following div class is a case for heading, this allows for styling -->
+
+
+        <div class="theheading">
+            <!-- The following code is the heading, set at h1 as it is the highest priority -->
+
+            <h1>contact</h1>
+        </div>
+<!-- The following div class creates a container for the form -->
+        <div class="theform">
+            <!-- The following code is for the form itself, to hold the inputs, it has a class for layout purposes,
+            there is a # for the form action, meaning when it is submitted, it will not redirect collected information to another page -->
+            <form action="#" class="myform">
+<!-- The following code is the title for the form -->
+                <h2>register your interest</h2>
+<!-- The following codes are the inputs, such as text, email, tel, radio, date and text area, they come with labels and place holders -->
+                <label>firstname</label><input type="text" placeholder="first name">
+                <label>last name</label> <input type="text" placeholder="last name">
+                <label>email</label> <input type="email" placeholder="email">
+
+                <label>phone</label><input type="tel" placeholder="tel">
+                <label>do you want us to give you a call to discuss further?</label>
+                <label><input type="radio">yes</label>
+                <label><input type="radio">no</label>
+                <label>date of birth<input type="date"></label>
+
+
+                <label>comments<textarea placeholder="write here" cols="30" rows="3"></textarea></label>
+
+
+                <label>what would you like to buy?</label><input type="text" id="comment" placeholder="item">
+<!-- The following code is for the submit button for the Javascript form, 
+it is set to the type of reset so that the input clears when the button is clicked, there is an id of submit,
+ which links to the Javascript -->
+                <button type="reset" id="submit">add</button>
+<!-- The following code is for the purposes of the generation of the unordered list in the form through Javascript, 
+there is and id of list that links to the Javascript code -->
+                <ul id="list"></ul>
+                <!-- The following code adds a buttom for submitting the form -->
+                <button >submit</button>
+            </form>
+        </div>
+
+<!-- The following div is a container for the Google map -->
+
+        <div class="col-3">
+            <!-- This iframe is the embedding of the Google map -->
+
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.3903944123417!2d174.76223311556046!3d-36.857073287678354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47e64696884b%3A0xc688b8a45f73d60a!2sYoobee%20College%20of%20Creative%20Innovation%20-%20Auckland%20City%20Road%20Campus!5e0!3m2!1sen!2snz!4v1640388708175!5m2!1sen!2snz"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+
+        </div>
+
+ 
+        <!-- The following code is for the footer, it holds a 'top' link which brings the page back up to the top, 
+and a subscribe email request link which opens an email window allowing the viewer to send an email with a preset subject as subsribe -->
+
+        <footer><a href="#top" class="bringback">top</a>
+            <a href="mailto:fake@fakeemail.com?subject=Subscribe" class="clickit">subscribe</a></footer>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

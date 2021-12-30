@@ -1,0 +1,191 @@
+/* The following code is for the stying of the background */
+.photobr {
+    /* The background as per below is set with an image, with a gradient overlay, with an opacity of 0.7 */
+    background: linear-gradient(rgba(87, 98, 213, 0.7), rgba(224, 223, 213, 0.7)), url(https://picsum.photos/id/547/1600/1200);
+    /* The following tow codes set the height and width of the background to 100% */
+    width: 100%;
+    height: 100%;
+    /* The following code postions the background to the top left of the page */
+    background-position: 0, 0;
+    /* The following code means the background will not be repeated, as in tiling */
+    background-repeat: no-repeat;
+    /* The following code will resize the background to cover the whole page */
+    background-size: cover;
+    /* The following code will mean that the the background will remain when scrolling, 
+    and only the content will move when scrolling, this allows to have more content than the size of the background */
+    background-attachment: fixed;
+}
+
+/* 
+The following code is the styling for the main heading */
+.theheading {
+    /* The following code is provides a name for the class to use in grid area */
+    grid-area: readme;
+    /* I have set heading to display flex with a flex-direction of column, to help with the vertical flow of the title */
+    display: flex;
+    flex-direction: column;
+    /* I  have set justify-content to flex-start so the items within start from the top ,have set align-items as center,
+     so that the title is horizontally centered in the box*/
+    justify-content: flex-start;
+    align-items: center;
+    /* I have added a box-shadow around the div for styling puposes, this gives the object depth */
+    box-shadow: 4px 4px 4px 4px black;
+    /* The following code gives a background colour with the opacity of 0.3 */
+    background-color: rgba(65, 97, 101, 0.3);
+}
+
+/* The following code is for the image gallery on the homepage */
+.gallery {
+    /* The following code is naming for the purpose of grid area */
+    grid-area: design;
+    /* The div is set to display flex with a flex-direction of row, this allows for the content to flow from left to right */
+    display: flex;
+    flex-direction: row;
+    /* The following code adds a gap of 30px */
+    gap: 30px;
+
+}
+
+/* The following code  is for the text on the homepage, the coding here is for naming purposes for the grid area */
+.col-1 {
+    grid-area: write;
+}
+
+
+/* The following code is provides a name for the class to use in grid area */
+.navbar {
+    grid-area: navbar;
+}
+
+/* The following code is for the text on the About page */
+.col-2 {
+    /* The following code is provides a name for the class to use in grid area */
+    grid-area: written;
+    /* The following code set the height of the div to 100% */
+    height: 100%;
+    /* The following code makes the text cover the area */
+    object-fit: cover;
+    /* The following code makes the div display flex with  a flex-direction of row to allow for the two columns */
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* The following code is provides a name for the class to use in grid area */
+.col-3 {
+    grid-area: option;
+}
+
+
+.theform {
+    /* The following code is provides a name for the class to use in grid area */
+    grid-area: theform;
+    /* The following code sets the display to flex, with the align-items as start, 
+    this allows foer the items within the form to start from the lefthand side of the page,
+     the flex-direction is set as column, this allows for the form to flow downwards */
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    /* The width is set to 100% for repsonsiveness */
+    width: 100%
+}
+
+/* The following code is provides a name for the class to use in grid area */
+.film {
+    grid-area: watch;
+}
+
+footer {
+    /* The following code is provides a name for the  footer elememt to use in grid area */
+    grid-area: fin;
+    /* The following code sets the display to flex, with the align items and justify content,
+     this allows for the 'top' link in the footer to be centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* I have set the height of the footer to 50px, with a width of 100%(to make the width more repsonsive) */
+    height: 50px;
+    width: 100%;
+}
+
+/* This container is for the Index page, as per below, it is set to  display grid */
+.container-3 {
+    display: grid;
+    /* The following code sets the height to 100% for repsonsiveness */
+    height: 100%;
+    /*  There are three columns and four rows. The following code is for the rows and columns of the grid,
+       have set the navbar and footer to 50px, 
+      have set the upper portion of the content to 60%, but have set the lower portion of the content to auto, 
+      as the lower portion had a lot more content to fit in the grid. The auto option allows for the content to fit nicely in the grid.
+      I have varied the column width for sylinging purposes */
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: 50px 60% auto 50px;
+    /* The following code is grid gap, to add spacing in the grid */
+    grid-gap: 15px;
+    grid-template-areas:
+        'navbar navbar navbar'
+        'readme design design'
+        'readme write write'
+        'fin fin fin';
+}
+
+/* This container is for the About page, as per below, it is set to  display grid */
+.container-1 {
+    grid-auto-flow: row;
+    display: grid;
+    /* The following code sets the height to 100% for repsonsiveness*/
+    height: 100%;
+    /* There are three columns and four rows. The following code is for the rows and columns of the grid, 
+    have set the navbar and footer to 50px,
+     have set the upper portion of the content to 60%, but have set the lower portion of the content to auto, 
+     as the lower portion had a lot more content to fit in the grid. The auto option allows for the content to fit nicely in the grid.
+        I have varied the column width for sylinging purposes */
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: 50px 60% auto 50px;
+    /* The following code is grid gap, to add spacing in the grid */
+    grid-gap: 15px;
+    grid-template-areas:
+        'navbar navbar navbar'
+        'readme watch watch'
+        'readme written written'
+        'fin fin fin';
+
+}
+
+/* This container is for the Contact page, as per below, it is set to  display grid */
+
+.container-2 {
+    display: grid;
+    /* The following code sets the height to 100% for repsonsiveness*/
+    height: 100%;
+
+    /* There are three columns and four rows.The following code is for the rows and columns of the grid, 
+      have set the navbar and footer to 50px,
+       have set the upper portion of the content to 60%, but have set the lower portion of the content to auto,
+        as the lower portion had a lot more content to fit in the grid. The auto option allows for the content to fit nicely in the grid.
+           I have varied the column width for sylinging purposes */
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: 50px 100% auto 50px;
+    /* The following code is grid gap, to add spacing in the grid */
+    grid-gap: 15px;
+    grid-template-areas:
+        'navbar navbar navbar'
+        'readme theform  option'
+        'readme theform option'
+        'fin fin fin';
+
+}
+
+
+/* The following code is to set the columnns on the about page to 50% */
+.write1,
+
+.write2 {
+    width: 50%
+}
+
+/* The following code sets the form width to 100% */
+.myform {
+
+    width: 100%
+}

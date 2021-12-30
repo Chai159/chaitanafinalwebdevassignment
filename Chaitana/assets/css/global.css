@@ -1,0 +1,103 @@
+/* The following code is the standard reset for layout purposes */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* The  following code sets the height of the html and the body to 100% */
+html,
+body {
+    height: 100%;
+
+}
+
+/* The following code is used to make the website mobile friendly */
+
+@media(max-width:500px) {
+
+    .container-3,
+    .container-1,
+    .container-2 {
+        /* The following code sets all three containers to a width and height of 100% for responsiveness */
+        height: 100%;
+        width: 100%;
+        /*The following code makes the containers display flex with a flex-direction of column, so that items flow downwards */
+        display: flex;
+        flex-direction: column;
+        /* The following code adds a gap of 20px in the flex box for spacing */
+        gap: 20px;
+     
+
+    }
+
+    /* The following code unsets the vertical syling of the tite, which was styled int the Typography stylesheet,
+     so that the heading flows horizontally */
+    h1 {
+        text-orientation: unset;
+        writing-mode: unset;
+    }
+
+    /* The following code is for the image gallery on the Homepage,
+    this has a display of flex,
+    with a flex-direction fo column,
+    which allows the content to flow vertically  */
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        /* The following adds a gap of 15px, so that the images do not sit so closely together */
+        gap: 15px;
+        
+    }
+ 
+    .gallery,
+    .film,
+    .col-3{
+         /* The following code adds padding on the left and right of the mobile, so the content does not fit so tightly on the edges */
+         margin:0 10px;
+    }
+
+    /* The following code is for the image gallery on the About,
+    this has a display of flex,
+    with a flex-direction fo column,
+    which allows the content to flow vertically instead of in two columns */
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    /* The following code removes the 50% column layout in there Layout style sheet, for the text */
+    .write1,
+    .write2 {
+        width: 100%;
+    }
+
+    /* The following code removes the shadow on the heading box */
+    .theheading {
+        box-shadow: none;
+    }
+
+    footer {
+        /* The following code adds a stylistic feature,
+        by fixing the footer to the bottom of the screen,
+       This means there is  easy access at any point of the page, 
+        to the 'top'and 'subscribe'links without having to scroll  to the bottom  */
+        position: fixed;
+        /* The following width sets the footer to 100%, for responsiveness, and the height to 50px */
+        width: 100%;
+        height: 50px;
+        /* The following code postions the footer exactly at the bottom of the screen */
+        bottom: 0;
+    }
+/* The following code adds padding for the last element to allow for the footer, to make sure the footer does not cover the content,
+at the bottom */
+    .col-1,
+    .col-3,
+    .col-2
+    p{
+        padding-bottom: 50px;
+    }
+}

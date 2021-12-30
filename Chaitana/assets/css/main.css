@@ -1,0 +1,13 @@
+@import url(./normalize.css);
+@import url(./layout.css);
+@import url(./typography.css);
+@import url(./components.css);
+@import url(./global.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@300;400&family=Pushster&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Pushster&display=swap');
+
+/* This page contains imports of internal style sheets(lines 1-5),
+externnal libraries from Font Awesome(line 6),
+and external libraries from Google Fonts(lines 7-8),
+these are to be used in the coding. This stylesheet is the main stylesheet */
